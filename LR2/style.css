@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EEF0F1;
+    font-family: 'Roboto';
+}
+
+header {
+    height: 100px;
+    background-color: #6474FF;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.login {
+    padding: 8px 20px;
+    margin-top: 15px;
+    float: right;
+    background-color: #FFC000;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-wrapper {
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.photo {
+    margin-top: 15px;
+    height: 80px;
+    border: 4px #6474FF solid;
+    border-radius: 100%;
+}
+
+.name {
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.wrapper {
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+.block {
+    background-color: #fff;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.block:last-child {
+    margin-right: 0;
+}
+
+.headline {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.list {
+    margin-top: 30px;
+    padding-left: 60px;
+}
+
+.list li {
+    text-align: left;
+}
+
+footer {
+    background-color: #6474FF;
+}
+ 
+.social-networks {
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.links {
+    margin-top: 10px;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+
+.links a {
+    color: #fff;
+    margin-right: 15px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.links a:last-child {
+    margin-right: 0px;
+}
