@@ -68,3 +68,8 @@ ul, ol {
     padding: 10px;
     margin-right: 40px;
 }
+
+
+.icon:last-child {
+    margin-right: 0;
+}
