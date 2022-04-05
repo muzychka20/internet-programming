@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Roboto;
+    overflow: hidden;
+}
+
+i {
+    font-family: fontawesome !important;
+    font-style: normal;
+}
+
+.container {
+    .row {
+        .col-50 {
+            .complete {
+                background-image: url(../img/side_background2.svg);
+                width: 50%;
+                float: left;
+                background-size: 100%;
+                height: 100vh;
+
+                .title {
+                    margin-top: 40px;
+                    text-align: center;
+                    color: #fff;
+                    letter-spacing: 1px;
+
+                    h2 {
+                        margin-top: 15px;
+                    }
+                }
+
+                .bg {
+                    width: 70%;
+                    display: block;
+                    margin: 0 auto;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    margin-top: 30px;
+                    padding: 30px 0px;
+
+                    .content {
+
+                        .one-payment,
+                        .total {
+                            border-radius: 5px;
+                            width: 80%;
+                            display: block;
+                            margin: 0 auto;
+                            background-color: rgba(253, 253, 253, 0.7);
+                            margin-bottom: 20px;
+                            padding: 10px;
+
+                            .code,
+                            .date {
+                                font-size: 12px;
+                                display: inline-block;
+                                font-weight: 400;
+                                opacity: 70%;
+                            }
+
+                            .code {
+                                margin-left: 18px;
+                            }
+
+                            .date {
+                                margin-left: 15px;
+
+                            }
+
+                            .point {
+                                .bullet {
+                                    display: inline-block;
+                                    background-color: #1a80f9;
+                                    height: 12px;
+                                    width: 5px;
+                                    -ms-transform: rotate(10deg);
+                                    transform: rotate(10deg);
+                                    -webkit-box-shadow: 3px 1px 0px 0px #c6c6c6;
+                                    box-shadow: 3px 1px 0px 0px #c6c6c6;
+
+                                }
+
+                                h4 {
+                                    display: inline-block;
+                                    opacity: 70%;
+                                    margin-left: 8px;
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .day-sum {
+                                float: right;
+                                margin-top: -20px;
+                                font-weight: bold;
+                                font-size: 14px;
+                                opacity: 90%;
+
+                                .sum {
+                                    letter-spacing: -1px;
+                                    margin-top: 7px;
+                                }
+                            }
+                        }
+
+                        .total {
+                            margin-bottom: 20px;
+
+                            .line {
+                                margin-bottom: 20px;
+
+                                h4 {
+                                    font-size: 14px;
+                                    opacity: 90%;
+                                }
+
+                                .day-sum {
+                                    opacity: 90%;
+                                    font-size: 14px;
+
+                                    .amount {
+                                        letter-spacing: -1px;
+                                        margin-top: 3px;
+                                    }
+                                }
+
+                                .last {
+                                    font-size: 13px;
+                                    margin-right: 5px;
+                                }
+                            }
+
+                            .line:nth-child(3) {
+                                margin-bottom: 30px;
+                            }
+
+                            .line:nth-child(4) {
+                                margin-bottom: 0px;
+
+                                h4,
+                                .day-sum .amount {
+                                    font-size: 22px;
+                                }
+
+                                .day-sum .amount {
+                                    margin-top: -10px;
+                                }
+                            }
+                        }
+                    }
+
+                    .previous {
+                        margin-left: 10%;
+
+                        .circle {
+                            display: inline-block;
+                            height: 30px;
+                            width: 30px;
+                            background-color: #000;
+                            border-radius: 100%;
+                            text-align: center;
+                        }
+
+                        .icon {
+                            display: inline-block;
+                            color: #fff;
+                            vertical-align: middle;
+                            margin-top: 50%;
+                            transform: translate(0, -50%);
+                        }
+
+                        .icon-text {
+                            display: inline-block;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .pay {
+                width: 50%;
+                float: right;
+
+                .wrapper {
+                    width: 50%;
+                    display: block;
+                    margin: 0 auto;
+
+                    form {
+                        width: 100%;
+                        overflow: hidden;
+                        .shadow {
+                            -webkit-box-shadow:  0px 2px 5px 0px rgba(176, 176, 176, 0.2);
+                            box-shadow: 0px 2px 5px 0px rgba(176, 176, 176, 0.2);
+                        }
+                        .variants {
+                            .card {
+                                text-align: center;
+                                color: rgba(0, 0, 0, 0.6);
+                                margin-top: 25px;
+                                font-size: 14px;
+                                font-weight: 300;
+                            }
+                        }
+
+                        .button {
+                            background-color: #03A9F4;
+                            color: #fff;
+                            border: none;
+                            border-radius: 5px;
+                            font-size: 14px;
+                            height: 40px;
+                            font-weight: 500;
+                            margin-top: 50px;
+                        }
+
+                        label {
+                            margin: 40px 0 5px 0px;
+                            display: block;
+                            font-weight: 700;
+                            font-size: 14px;
+                            color: rgba(0, 0, 0, 0.6);
+                        }
+
+                        table {
+                            width: 100%;
+
+                            .line {
+                                border-bottom-left-radius: 0px;
+                                border-bottom-right-radius: 0px;
+                                margin-bottom: -4px;
+                                background-image: url("../img/line.jpg");
+                                background-repeat: no-repeat;    
+                                background-position: 250px;    
+                                background-size: 110px;
+                            }
+
+                            .date .cvc {
+                                margin-top: -4px;
+                            }
+
+                            .date {
+                                box-sizing: content-box;
+                                height: 26px;
+                                border-bottom-right-radius: 0px;
+                                border-top-right-radius: 0px;
+                                border-top-left-radius: 0px;
+                                width: 95%;
+                            }
+
+                            .cvc {
+                                border-right: -2px solid rgba(0, 0, 0, 0.08);
+                                border-top-right-radius: 0px;
+                                border-top-right-radius: 0px;
+                                border-top-left-radius: 0px;
+                                border-bottom-left-radius: 0px;
+                                background-image: url("../img/cvv.webp");
+                                background-repeat: no-repeat;   
+                                background-position: 140px;   
+                                background-size: 30px;
+                            }
+                        }
+
+                        input,
+                        .select {
+                            width: 100%;
+                            border-radius: 5px;
+                            height: 30px;
+                            border-color: rgba(0, 0, 0, 0.08);
+                            padding-left: 10px;
+                            box-sizing: border-box;
+                        }
+
+                        .select {
+                            border-bottom-right-radius: 0px;
+                            border-bottom-left-radius: 0px;
+                        }
+
+                        .zip {
+                            border-top-right-radius: 0px;
+                            border-top-left-radius: 0px;
+                            margin-top: -1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
