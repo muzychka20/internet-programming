@@ -108,13 +108,17 @@ footer {
     font-style: italic;
 }
 
-.links a {
-    color: #fff;
+.links li {
+    display: inline-block;
     margin-right: 15px;
     font-weight: 300;
+}
+
+.links li a {
+    color: #fff;
     opacity: 0.8;
 }
 
-.links a:last-child {
+.links li:last-child {
     margin-right: 0px;
 }
