@@ -14,7 +14,7 @@ i {
   font-style: normal;
 }
 
-.container .row .col-50 .complete {
+.container .complete {
   background-image: url(../img/side_background2.svg);
   width: 50%;
   float: left;
@@ -22,18 +22,18 @@ i {
   height: 100vh;
 }
 
-.container .row .col-50 .complete .title {
+.container .complete .title {
   margin-top: 40px;
   text-align: center;
   color: #fff;
   letter-spacing: 1px;
 }
 
-.container .row .col-50 .complete .title h2 {
+.container .complete .title h2 {
   margin-top: 15px;
 }
 
-.container .row .col-50 .complete .bg {
+.container .complete .bg {
   width: 70%;
   display: block;
   margin: 0 auto;
@@ -42,8 +42,8 @@ i {
   padding: 30px 0px;
 }
 
-.container .row .col-50 .complete .bg .content .one-payment,
-.container .row .col-50 .complete .bg .content .total {
+.container .complete .bg .content .one-payment,
+.container .complete .bg .content .total {
   border-radius: 5px;
   width: 80%;
   display: block;
@@ -53,28 +53,28 @@ i {
   padding: 10px;
 }
 
-.container .row .col-50 .complete .bg .content .one-payment .code,
-.container .row .col-50 .complete .bg .content .one-payment .date,
-.container .row .col-50 .complete .bg .content .total .code,
-.container .row .col-50 .complete .bg .content .total .date {
+.container .complete .bg .content .one-payment .code,
+.container .complete .bg .content .one-payment .date,
+.container .complete .bg .content .total .code,
+.container .complete .bg .content .total .date {
   font-size: 12px;
   display: inline-block;
   font-weight: 400;
   opacity: 70%;
 }
 
-.container .row .col-50 .complete .bg .content .one-payment .code,
-.container .row .col-50 .complete .bg .content .total .code {
+.container .complete .bg .content .one-payment .code,
+.container .complete .bg .content .total .code {
   margin-left: 18px;
 }
 
-.container .row .col-50 .complete .bg .content .one-payment .date,
-.container .row .col-50 .complete .bg .content .total .date {
+.container .complete .bg .content .one-payment .date,
+.container .complete .bg .content .total .date {
   margin-left: 15px;
 }
 
-.container .row .col-50 .complete .bg .content .one-payment .point .bullet,
-.container .row .col-50 .complete .bg .content .total .point .bullet {
+.container .complete .bg .content .one-payment .point .bullet,
+.container .complete .bg .content .total .point .bullet {
   display: inline-block;
   background-color: #1a80f9;
   height: 12px;
@@ -85,16 +85,16 @@ i {
   box-shadow: 3px 1px 0px 0px #c6c6c6;
 }
 
-.container .row .col-50 .complete .bg .content .one-payment .point h4,
-.container .row .col-50 .complete .bg .content .total .point h4 {
+.container .complete .bg .content .one-payment .point h4,
+.container .complete .bg .content .total .point h4 {
   display: inline-block;
   opacity: 70%;
   margin-left: 8px;
   font-size: 16px;
 }
 
-.container .row .col-50 .complete .bg .content .one-payment .day-sum,
-.container .row .col-50 .complete .bg .content .total .day-sum {
+.container .complete .bg .content .one-payment .day-sum,
+.container .complete .bg .content .total .day-sum {
   float: right;
   margin-top: -20px;
   font-weight: bold;
@@ -102,62 +102,62 @@ i {
   opacity: 90%;
 }
 
-.container .row .col-50 .complete .bg .content .one-payment .day-sum .sum,
-.container .row .col-50 .complete .bg .content .total .day-sum .sum {
+.container .complete .bg .content .one-payment .day-sum .sum,
+.container .complete .bg .content .total .day-sum .sum {
   letter-spacing: -1px;
   margin-top: 7px;
 }
 
-.container .row .col-50 .complete .bg .content .total {
+.container .complete .bg .content .total {
   margin-bottom: 20px;
 }
 
-.container .row .col-50 .complete .bg .content .total .line {
+.container .complete .bg .content .total .line {
   margin-bottom: 20px;
 }
 
-.container .row .col-50 .complete .bg .content .total .line h4 {
+.container .complete .bg .content .total .line h4 {
   font-size: 14px;
   opacity: 90%;
 }
 
-.container .row .col-50 .complete .bg .content .total .line .day-sum {
+.container .complete .bg .content .total .line .day-sum {
   opacity: 90%;
   font-size: 14px;
 }
 
-.container .row .col-50 .complete .bg .content .total .line .day-sum .amount {
+.container .complete .bg .content .total .line .day-sum .amount {
   letter-spacing: -1px;
   margin-top: 3px;
 }
 
-.container .row .col-50 .complete .bg .content .total .line .last {
+.container .complete .bg .content .total .line .last {
   font-size: 13px;
   margin-right: 5px;
 }
 
-.container .row .col-50 .complete .bg .content .total .line:nth-child(3) {
+.container .complete .bg .content .total .line:nth-child(3) {
   margin-bottom: 30px;
 }
 
-.container .row .col-50 .complete .bg .content .total .line:nth-child(4) {
+.container .complete .bg .content .total .line:nth-child(4) {
   margin-bottom: 0px;
 }
 
-.container .row .col-50 .complete .bg .content .total .line:nth-child(4) h4,
-.container .row .col-50 .complete .bg .content .total .line:nth-child(4) .day-sum .amount {
+.container .complete .bg .content .total .line:nth-child(4) h4,
+.container .complete .bg .content .total .line:nth-child(4) .day-sum .amount {
   font-size: 22px;
 }
 
-.container .row .col-50 .complete .bg .content .total .line:nth-child(4) .day-sum .amount {
+.container .complete .bg .content .total .line:nth-child(4) .day-sum .amount {
   margin-top: -10px;
 }
 
-.container .row .col-50 .complete .bg .previous {
+.container .complete .bg .previous {
   margin-left: 10%;
 }
 
-.container .row .col-50 .complete .bg .previous .circle {
+.container .complete .bg .previous .circle {
   display: inline-block;
   height: 30px;
   width: 30px;
@@ -166,7 +166,7 @@ i {
   text-align: center;
 }
 
-.container .row .col-50 .complete .bg .previous .icon {
+.container .complete .bg .previous .icon {
   display: inline-block;
   color: #fff;
   vertical-align: middle;
@@ -175,33 +175,34 @@ i {
           transform: translate(0, -50%);
 }
 
-.container .row .col-50 .complete .bg .previous .icon-text {
+.container .complete .bg .previous .icon-text {
   display: inline-block;
   font-size: 14px;
 }
 
-.container .row .col-50 .pay {
+.container .pay {
   width: 50%;
   float: right;
+  height: 100vh;
 }
 
-.container .row .col-50 .pay .wrapper {
+.container .pay .wrapper {
   width: 50%;
   display: block;
   margin: 0 auto;
 }
 
-.container .row .col-50 .pay .wrapper form {
+.container .pay .wrapper form {
   width: 100%;
   overflow: hidden;
 }
 
-.container .row .col-50 .pay .wrapper form .shadow {
+.container .pay .wrapper form .shadow {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(176, 176, 176, 0.2);
   box-shadow: 0px 2px 5px 0px rgba(176, 176, 176, 0.2);
 }
 
-.container .row .col-50 .pay .wrapper form .variants .card {
+.container .pay .wrapper form .variants .card {
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   margin-top: 25px;
@@ -209,7 +210,7 @@ i {
   font-weight: 300;
 }
 
-.container .row .col-50 .pay .wrapper form .button {
+.container .pay .wrapper form .button {
   background-color: #03A9F4;
   color: #fff;
   border: none;
@@ -220,7 +221,7 @@ i {
   margin-top: 50px;
 }
 
-.container .row .col-50 .pay .wrapper form label {
+.container .pay .wrapper form label {
   margin: 40px 0 5px 0px;
   display: block;
   font-weight: 700;
@@ -228,11 +229,11 @@ i {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.container .row .col-50 .pay .wrapper form table {
+.container .pay .wrapper form table {
   width: 100%;
 }
 
-.container .row .col-50 .pay .wrapper form table .line {
+.container .pay .wrapper form table .line {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   margin-bottom: -4px;
@@ -242,11 +243,11 @@ i {
   background-size: 110px;
 }
 
-.container .row .col-50 .pay .wrapper form table .date .cvc {
+.container .pay .wrapper form table .date .cvc {
   margin-top: -4px;
 }
 
-.container .row .col-50 .pay .wrapper form table .date {
+.container .pay .wrapper form table .date {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   height: 26px;
@@ -256,7 +257,7 @@ i {
   width: 95%;
 }
 
-.container .row .col-50 .pay .wrapper form table .cvc {
+.container .pay .wrapper form table .cvc {
   border-right: -2px solid rgba(0, 0, 0, 0.08);
   border-top-right-radius: 0px;
   border-top-right-radius: 0px;
@@ -268,8 +269,8 @@ i {
   background-size: 30px;
 }
 
-.container .row .col-50 .pay .wrapper form input,
-.container .row .col-50 .pay .wrapper form .select {
+.container .pay .wrapper form input,
+.container .pay .wrapper form .select {
   width: 100%;
   border-radius: 5px;
   height: 30px;
@@ -279,12 +280,12 @@ i {
           box-sizing: border-box;
 }
 
-.container .row .col-50 .pay .wrapper form .select {
+.container .pay .wrapper form .select {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
-.container .row .col-50 .pay .wrapper form .zip {
+.container .pay .wrapper form .zip {
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
   margin-top: -1px;
