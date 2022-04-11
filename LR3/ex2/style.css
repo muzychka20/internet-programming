@@ -229,11 +229,16 @@ i {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.container .pay .wrapper form table {
+.container .pay .wrapper form .country_or_region {
+  height: 15px;
+  padding-bottom: 40px;
+}
+
+.container .pay .wrapper form .country_or_region .row {
   width: 100%;
 }
 
-.container .pay .wrapper form table .line {
+.container .pay .wrapper form .country_or_region .row .number {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   margin-bottom: -4px;
@@ -243,11 +248,12 @@ i {
   background-size: 110px;
 }
 
-.container .pay .wrapper form table .date .cvc {
-  margin-top: -4px;
+.container .pay .wrapper form .country_or_region .row .col-1 {
+  width: 50%;
+  float: left;
 }
 
-.container .pay .wrapper form table .date {
+.container .pay .wrapper form .country_or_region .row .col-1 .date {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   height: 26px;
@@ -257,7 +263,12 @@ i {
   width: 95%;
 }
 
-.container .pay .wrapper form table .cvc {
+.container .pay .wrapper form .country_or_region .row .col-2 {
+  width: 50%;
+  float: right;
+}
+
+.container .pay .wrapper form .country_or_region .row .col-2 .cvc {
   border-right: -2px solid rgba(0, 0, 0, 0.08);
   border-top-right-radius: 0px;
   border-top-right-radius: 0px;

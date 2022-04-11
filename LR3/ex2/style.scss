@@ -42,7 +42,9 @@ i {
             background-color: rgba(255, 255, 255, 0.2);
             margin-top: 30px;
             padding: 30px 0px;
+
             .content {
+
                 .one-payment,
                 .total {
                     border-radius: 5px;
@@ -183,6 +185,7 @@ i {
         width: 50%;
         float: right;
         height: 100vh;
+
         .wrapper {
             width: 50%;
             display: block;
@@ -226,42 +229,53 @@ i {
                     color: rgba(0, 0, 0, 0.6);
                 }
 
-                table {
-                    width: 100%;
+                .country_or_region {
+                    height: 15px;
+                    padding-bottom: 40px;
 
-                    .line {
-                        border-bottom-left-radius: 0px;
-                        border-bottom-right-radius: 0px;
-                        margin-bottom: -4px;
-                        background-image: url("../img/line.jpg");
-                        background-repeat: no-repeat;
-                        background-position: 250px;
-                        background-size: 110px;
-                    }
+                    .row {
+                        width: 100%;
 
-                    .date .cvc {
-                        margin-top: -4px;
-                    }
+                        .number {
+                            border-bottom-left-radius: 0px;
+                            border-bottom-right-radius: 0px;
+                            margin-bottom: -4px;
+                            background-image: url("../img/line.jpg");
+                            background-repeat: no-repeat;
+                            background-position: 250px;
+                            background-size: 110px;
+                        }
 
-                    .date {
-                        box-sizing: content-box;
-                        height: 26px;
-                        border-bottom-right-radius: 0px;
-                        border-top-right-radius: 0px;
-                        border-top-left-radius: 0px;
-                        width: 95%;
-                    }
+                        .col-1 {
+                            width: 50%;
+                            float: left;
 
-                    .cvc {
-                        border-right: -2px solid rgba(0, 0, 0, 0.08);
-                        border-top-right-radius: 0px;
-                        border-top-right-radius: 0px;
-                        border-top-left-radius: 0px;
-                        border-bottom-left-radius: 0px;
-                        background-image: url("../img/cvv.webp");
-                        background-repeat: no-repeat;
-                        background-position: 140px;
-                        background-size: 30px;
+                            .date {
+                                box-sizing: content-box;
+                                height: 26px;
+                                border-bottom-right-radius: 0px;
+                                border-top-right-radius: 0px;
+                                border-top-left-radius: 0px;
+                                width: 95%;
+                            }
+                        }
+
+                        .col-2 {
+                            width: 50%;
+                            float: right;
+
+                            .cvc {
+                                border-right: -2px solid rgba(0, 0, 0, 0.08);
+                                border-top-right-radius: 0px;
+                                border-top-right-radius: 0px;
+                                border-top-left-radius: 0px;
+                                border-bottom-left-radius: 0px;
+                                background-image: url("../img/cvv.webp");
+                                background-repeat: no-repeat;
+                                background-position: 140px;
+                                background-size: 30px;
+                            }
+                        }
                     }
                 }
 
