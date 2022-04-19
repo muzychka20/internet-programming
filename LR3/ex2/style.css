@@ -40,8 +40,6 @@ i {
   background-color: rgba(255, 255, 255, 0.2);
   margin-top: 30px;
   padding: 30px 0px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .container .complete .bg .content .one-payment,
