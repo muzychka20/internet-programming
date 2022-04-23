@@ -215,7 +215,7 @@ body {
                 margin-top: -15%;  
                 margin-left: 50%;
                 transform: translateX(-50%);
-              
+                padding-bottom: 50px;
 
                 .row {
                     flex-direction: column;
@@ -249,9 +249,8 @@ body {
 
             .text {
                 margin: 0;
-                
                 transform: translateY(0);
-                margin-top: 30px;
+                margin-top: 15%; 
             }
 
             img {
