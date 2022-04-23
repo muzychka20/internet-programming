@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
@@ -17,7 +21,6 @@ body {
 
 .container .headlines {
   width: 50%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,9 +29,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #242942;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .container .headlines h1 {
@@ -39,7 +39,8 @@ body {
 .container .headlines img {
   height: 30px;
   width: 30px;
-  padding: 58px 0 0 80px;
+  padding-top: 60px;
+  padding-left: 65px;
 }
 
 .container .headlines .text {
@@ -50,12 +51,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   gap: 25px 0px;
-  padding-left: 80px;
-  padding-bottom: 200px;
+  padding-left: 65px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .container .headlines .text .row {
@@ -102,17 +103,20 @@ body {
 }
 
 .container .image .devices {
-  margin-top: -35%;
+  display: block;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .container .image .bg {
-  height: 60%;
   background-color: #EEF3F6;
   border-bottom-left-radius: 100px;
+  height: 50%;
 }
 
 .container .image .bg nav {
-  padding-top: 50px;
+  padding-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,5 +147,127 @@ body {
   content: "\2B24";
   font-size: 12px;
   margin-right: 30px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container .headlines .text h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container .headlines .text h1 {
+    font-size: 40px;
+  }
+  .container .headlines .text .row button {
+    padding: 10px 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .container .headlines .text .row .ellipse h2 {
+    font-size: 14px;
+  }
+  .container .headlines .text .row h3 {
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+  .container .image .bg nav ul {
+    gap: 40px;
+  }
+  .container .image .bg nav ul li {
+    font-size: 15px;
+  }
+  .container .image .bg nav ul li a::before {
+    margin-right: 15px;
+  }
+  .container .image .devices {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .headlines {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    z-index: 2;
+    width: 100%;
+  }
+  .container .headlines img {
+    padding-top: 0px;
+    margin-top: -85px;
+  }
+  .container .headlines .text {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-top: -15%;
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .container .headlines .text .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px 20px;
+  }
+  .container .image {
+    width: 100%;
+    z-index: 1;
+    height: auto;
+  }
+  .container .image .bg {
+    border-bottom-right-radius: 100px;
+    padding-bottom: 60px;
+  }
+  .container .image .devices {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container .headlines {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .headlines .text {
+    margin: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-top: 30px;
+  }
+  .container .headlines img {
+    padding: 0;
+    margin-top: -270px;
+  }
+  .container .image .bg nav {
+    padding-top: 120px;
+  }
+  .container .image .bg nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .container .image .bg nav ul li a::before {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

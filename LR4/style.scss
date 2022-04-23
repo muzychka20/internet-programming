@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
@@ -15,11 +19,9 @@ body {
 
     .headlines {
         width: 50%;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         color: #242942;
-        justify-content: space-between;
 
         h1 {
             font-size: 58px;
@@ -29,16 +31,18 @@ body {
         img {
             height: 30px;
             width: 30px;
-            padding: 58px 0 0 80px;
+            padding-top: 60px;
+            padding-left: 65px;
         }
 
         .text {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             gap: 25px 0px;
-            padding-left: 80px;
-            padding-bottom: 200px;
+            padding-left: 65px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
 
             .row {
                 display: flex;
@@ -67,8 +71,6 @@ body {
                     }
                 }
 
-
-
                 h3 {
                     font-weight: 300;
                     letter-spacing: 4px;
@@ -83,23 +85,24 @@ body {
         height: 100vh;
 
         .devices {
-            margin-top: -35%;
+            display: block;
+            margin: 0 auto;
+            transform: translateY(-50%);
         }
 
         .bg {
-            height: 60%;
             background-color: #EEF3F6;
             border-bottom-left-radius: 100px;
+            height: 50%;
 
             nav {
-                padding-top: 50px;
+                padding-top: 60px;
                 display: flex;
                 justify-content: center;
-
+                
                 ul {
                     display: flex;
                     gap: 60px;
-
                     li {
                         font-weight: 900;
                         font-size: 16px;
@@ -121,3 +124,161 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        .headlines {
+            .text {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        .headlines {
+            .text {
+                h1 {
+                    font-size: 40px;
+                }
+
+                .row {
+                    button {
+                        padding: 10px 20px;
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                    }
+
+                    .ellipse {
+                        h2 {
+
+                            font-size: 14px;
+                        }
+                    }
+
+                    h3 {
+                        letter-spacing: 2px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .image {
+            .bg {
+                nav {
+                    ul {
+                        gap: 40px;
+
+                        li {
+                            font-size: 15px;
+
+                            a::before {
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .devices {
+              margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        flex-direction: column-reverse;
+
+        .headlines {
+        
+            flex-direction: row;
+            z-index: 2;
+            width: 100%;
+        
+            img {
+                padding-top: 0px;
+                margin-top: -85px;
+            }
+
+
+            .text {
+                width: 100%;
+                text-align: center;
+                padding: 0;
+                margin-top: -15%;  
+                margin-left: 50%;
+                transform: translateX(-50%);
+              
+
+                .row {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px 20px;
+                }
+            }
+        }
+
+        .image {
+            width: 100%;
+            z-index: 1;
+            height: auto;
+
+            .bg {
+                border-bottom-right-radius: 100px;
+                padding-bottom: 60px;
+            }
+
+            .devices {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        .headlines {
+            justify-content: center;
+
+            .text {
+                margin: 0;
+                
+                transform: translateY(0);
+                margin-top: 30px;
+            }
+
+            img {
+                padding: 0;
+                margin-top: -270px;
+            }
+        }
+
+        .image {
+            .bg {
+                nav {
+                    padding-top: 120px;
+
+                    ul {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 20px;
+
+                        li {
+                            a::before {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
