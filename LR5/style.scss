@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$based-color: #A6A6A6;
+$based-color-categories: #353535;
+$active-color: #FF4E4E;
+$bg-color: #F6F6F6;
+$Bold: 700;
+$Semibold: 600;
+$Medium: 500;
+$Regular: 400;
+
+@mixin text($font-size, $weight, $color) {
+    font-size: $font-size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin active($is-active) {
+    @if $is-active {
+        fill: $active-color;
+        color: $active-color;
+    }
+
+    @else {
+        fill: $based-color;
+    }
+}
+
+@mixin categories($is-active) {
+    @if $is-active {
+        display: flex;
+        color: $active-color;
+    }
+}
+
+$theme-colors: (
+    "success": #28a745,
+    "info": #17a2b8,
+    "warning": #F3E5B480,
+);
+
+@keyframes active-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+    #container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 90px 65% auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav main info";
+
+        #nav {
+            grid-area: nav;
+            background-color: $bg-color;
+            text-align: center;
+
+            .menu {
+                margin-top: 45px;
+                margin-bottom: 65px;
+            }
+
+            ul {
+                li {
+                    list-style-type: none;
+                    margin-bottom: 60px;
+
+                    .line {
+                        display: none;
+                        width: 5px;
+                        height: 50px;
+                        background-color: #FF4E4E;
+                        border-radius: 20px;
+                        float: right;
+                        margin-top: -45px;
+                    }
+
+                    a {
+                        .icon {
+                            fill: $based-color;
+                        }
+
+                        .active {
+                            @include active(true);
+                        }
+                    }
+
+                    .active {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        #main {
+            grid-area: main;
+
+            input {
+                width: 91%;
+                display: block;
+                margin: 0 auto;
+                margin-top: 33px;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                background-color: #F6F6F6;
+                background-image: url(img/find.svg);
+                background-repeat: no-repeat;
+                background-position: 23px;
+                padding-left: 65px;
+            }
+
+
+            .categorias {
+                margin-top: 40px;
+                margin-left: 45px;
+
+                h2 {
+                    @include text(26px, $Bold, #353535)
+                }
+
+                p {
+                    @include text(16px, $Semibold, #A6A6A6)
+                }
+            }
+
+            #cards {
+                margin: 0 auto;
+                width: 91%;
+                margin-left: 45px;
+                margin-top: 35px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                column-gap: 20px;
+                row-gap: 25px;
+                grid-template-areas:
+                    "card1 card2 card3",
+                    "card4 card5 card6";
+
+                .card {
+                    border-radius: 16px;
+                    align-content: end;
+                    img {
+                        width: 100%;
+                        height: 163px;
+                    }
+
+                    box-shadow: 4px 4px 12px 0px #0000001A;
+                    height: 260px;
+
+                    .price {
+                        margin-left: 13px;
+                       
+
+                        .name {
+                            @include text(16px, $Medium, #616161)
+                        }
+
+                        .tag {
+                            @include text(12px, $Semibold, #FF4E4E)
+                        }
+
+                    }
+
+                    .price:nth-child(1) {
+                        margin-top: 170px
+                    }
+                    .add {
+                        float: right;
+                        margin-right: 13px;
+                        margin-top: -20px;
+                        fill: #fff;
+                    }
+
+                    .add:hover {
+                        fill: #353535;
+                    }
+                }
+
+                .card:nth-child(4) {
+                    margin-bottom: 20px;
+                }
+
+                #card1 {
+                    background-image: url(img/cards/1.png);
+                    background-repeat: no-repeat;
+                }
+
+                #card2 {
+                    background-image: url(img/cards/2.png);
+                    background-repeat: no-repeat;
+                }
+
+                #card3 {
+                    background-image: url(img/cards/3.png);
+                    background-repeat: no-repeat;
+                }
+
+                #card4 {
+                    background-image: url(img/cards/4.png);
+                    background-repeat: no-repeat;
+                }
+            }
+
+            nav {
+                margin-left: 45px;
+                margin-right: 45px;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    margin-top: 27px;
+
+                    li {
+                        list-style: none;
+                        padding-bottom: 5px;
+
+                        a {
+                            display: flex;
+                            text-decoration: none;
+
+                            @include text(18px, $Semibold, #353535);
+
+                            .icon {
+                                fill: $based-color-categories;
+
+                            }
+
+                            .active {
+                                @include active(true);
+                                animation: active-animation 5s cubic-bezier(1, 1, 1, 1) infinite;
+                            }
+
+                            p {
+                                margin-left: 15px;
+                            }
+                        }
+
+                        .line {
+                            display: none;
+                            height: 3px;
+                            margin-top: 5px;
+                            border-radius: 20px;
+                            background-color: $active-color;
+                        }
+
+                        .active {
+                            @include categories(true);
+                        }
+                    }
+                }
+
+                .strip {
+                    height: 2px;
+                    background-color: #F6F6F6;
+                    margin-top: -8px;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        #info {
+            grid-area: info;
+            background-color: $bg-color;
+            display: grid;
+            grid-template-rows: auto 80px;
+
+            .text {
+
+                .text-info {
+                    margin-left: 24px;
+
+                    h2 {
+                        margin-top: 45px;
+                    }
+
+                    .text1 {
+                        margin-bottom: 30px;
+                        margin-top: 25px;
+                        display: grid;
+                        grid-template-columns: 90% auto;
+                        grid-template-rows: auto;
+                        grid-template-areas:
+                            "text close";
+
+                        .check-confirm {
+                            grid-area: text;
+
+                            h3 {
+                                @include text(20px, $Semibold, #353535);
+                            }
+
+                            p {
+                                margin-top: 5px;
+                                @include text(16px, $Medium, #6B6B6B);
+                            }
+                        }
+
+                        .close {
+                            grid-area: close;
+                        }
+                    }
+
+                    .text2 {
+                        margin-top: 30px;
+
+                        p {
+                            @include text(16px, $Medium, #ACACAC);
+                            margin-top: 15px;
+                        }
+
+                        h4 {
+                            @include text(18px, $Semibold, #353535);
+                            margin-top: 5px;
+                        }
+                    }
+                }
+
+                .message {
+
+                    @each $status,
+                    $color in $theme-colors {
+                        &--#{$status} {
+                            @include text(12px, $Regular, #DFAF00);
+                            background-color: $color;
+                            border: 1px solid #FFF5D2;
+                            border-radius: 12px;
+                            padding: 24px 13px;
+                            width: 85%;
+                            display: flex;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+
+                .message-text {
+                    margin-left: 17px;
+                }
+            }
+
+            .btn {
+                display: block;
+                background-color: #5C5C5C;
+                border-radius: 50px;
+                width: 85%;
+                height: 60px;
+                margin: 0 auto;
+
+                a {
+                    text-decoration: none;
+                }
+
+                .recibo {
+                    @include text(18px, $Semibold, #fff);
+                    text-align: center;
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+}
+
+$breaks: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+@media screen and (max-width: map-get($breaks, "sm")) {
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+
+        #container {
+            display: block;
+
+            #nav {
+                grid-area: menu;
+                background-color: #fff;
+                float: left;
+                height: 30px;
+                .menu {
+                    margin-left: 45px;
+                }
+
+                ul {
+                    display: none;
+                }
+            }
+
+            #main {
+                grid-area: title;
+                display: block;
+
+                input {
+                    background-color: #fff;
+                    margin-right: 45px;
+                    width: 50px;
+                    float: right;
+                    padding-left: 40px;
+                }
+
+                .categorias {
+                    padding-top: 100px;
+                    margin-top: 40px;
+
+                    p {
+                        @include text(16px, $Semibold, #A6A6A6)
+                    }
+                }
+
+                #cards {
+                    margin: 0 auto;
+                    margin-top: 25px;
+                    width: 91%;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas:
+                        "card1 card2",
+                        "card3 card4";
+
+                    .card {
+                        .price {
+                        .name {
+                            @include text(13px, $Medium, #616161);
+                        }
+
+                        .tag {
+                            @include text(10px, $Semibold, #FF4E4E);
+                        }
+                    }
+                    }
+
+                        .card:nth-child(3) {
+                            .price {
+                                .tag {
+                                    opacity: 0.2;
+                                }
+                            }
+                        }
+
+                        .card:nth-child(4) {
+                            .price {
+                                .tag {
+                                    opacity: 0.2;
+                                }
+
+                                .name {
+                                    font-size: 0px;
+                                }
+
+                                .name::after {
+                                    font-size: 16px;
+                                    content: "Pizza j&m";
+                                }
+                            }
+                        }
+                    }
+
+                    nav {
+                        margin-left: 45px;
+                        margin-right: 45px;
+
+                        ul {
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: baseline;
+                            margin-top: 27px;
+
+                            li {
+                                list-style: none;
+                                padding-bottom: 5px;
+
+                                a {
+                                    .icon {
+                                        padding: 15px;
+                                        width: 25px;
+                                        height: 25px;
+                                        background-color: #E8E8E8;
+                                        border-radius: 16px;
+                                    }
+
+                                    .active {
+                                        background-color: $active-color;
+                                        fill: #fff;
+                                    }
+
+                                    p {
+                                        margin-left: 15px;
+                                        display: none;
+                                    }
+                                }
+
+                                .line {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .strip {
+                            display: none;
+                        }
+                    }
+
+                    #card1 {
+                        background-image: url(img/mobile/1.jpg);
+                    }
+    
+                    #card2 {
+                        background-image: url(img/mobile/2.jpg);
+                    }
+    
+                    #card3 {
+                        background-image: url(img/mobile/3.jpg);
+                    }
+    
+                    #card4 {
+                        background-image: url(img/mobile/4.jpg);
+                    }
+                }
+
+                #info {
+                    background-color: #fff;
+                    padding-bottom: 30px;
+
+                    .text {
+                        .text-info {
+                            .text1 {
+                                .check-confirm {
+                                    grid-area: text;
+
+                                    h3 {
+                                        @include text(22px, $Semibold, #353535);
+                                    }
+
+                                    p {
+                                        margin-top: 5px;
+                                        @include text(16px, $Medium, #6B6B6B);
+                                    }
+                                }   
+                            }
+
+                            .text2 {
+                                p {
+                                    @include text(14px, $Medium, #ACACAC);
+  
+                                }
+                                h4 {
+                                    @include text(16px, $Semibold, #353535);    
+                                }
+                            }
+                        }
+
+                        .message {
+                            @each $status,
+                            $color in $theme-colors {
+                                &--#{$status} {
+                                    @include text(10px, $Regular, #DFAF00);
+                                }
+                            }
+                        }
+                    }
+                    .btn {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
