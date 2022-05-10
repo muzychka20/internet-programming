@@ -157,6 +157,7 @@ body {
                 .card {
                     border-radius: 16px;
                     align-content: end;
+
                     img {
                         width: 100%;
                         height: 163px;
@@ -167,7 +168,7 @@ body {
 
                     .price {
                         margin-left: 13px;
-                       
+
 
                         .name {
                             @include text(16px, $Medium, #616161)
@@ -182,6 +183,7 @@ body {
                     .price:nth-child(1) {
                         margin-top: 170px
                     }
+
                     .add {
                         float: right;
                         margin-right: 13px;
@@ -400,6 +402,7 @@ $breaks: (
                 background-color: #fff;
                 float: left;
                 height: 30px;
+
                 .menu {
                     margin-left: 45px;
                 }
@@ -441,149 +444,153 @@ $breaks: (
 
                     .card {
                         .price {
-                        .name {
-                            @include text(13px, $Medium, #616161);
-                        }
-
-                        .tag {
-                            @include text(10px, $Semibold, #FF4E4E);
-                        }
-                    }
-                    }
-
-                        .card:nth-child(3) {
-                            .price {
-                                .tag {
-                                    opacity: 0.2;
-                                }
+                            .name {
+                                @include text(13px, $Medium, #616161);
                             }
-                        }
 
-                        .card:nth-child(4) {
-                            .price {
-                                .tag {
-                                    opacity: 0.2;
-                                }
-
-                                .name {
-                                    font-size: 0px;
-                                }
-
-                                .name::after {
-                                    font-size: 16px;
-                                    content: "Pizza j&m";
-                                }
+                            .tag {
+                                @include text(10px, $Semibold, #FF4E4E);
                             }
                         }
                     }
 
-                    nav {
-                        margin-left: 45px;
-                        margin-right: 45px;
-
-                        ul {
-
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: baseline;
-                            margin-top: 27px;
-
-                            li {
-                                list-style: none;
-                                padding-bottom: 5px;
-
-                                a {
-                                    .icon {
-                                        padding: 15px;
-                                        width: 25px;
-                                        height: 25px;
-                                        background-color: #E8E8E8;
-                                        border-radius: 16px;
-                                    }
-
-                                    .active {
-                                        background-color: $active-color;
-                                        fill: #fff;
-                                    }
-
-                                    p {
-                                        margin-left: 15px;
-                                        display: none;
-                                    }
-                                }
-
-                                .line {
-                                    display: none;
-                                }
+                    .card:nth-child(3) {
+                        .price {
+                            .tag {
+                                opacity: 0.2;
                             }
                         }
-                        .strip {
-                            display: none;
-                        }
                     }
 
-                    #card1 {
-                        background-image: url(img/mobile/1.jpg);
-                    }
-    
-                    #card2 {
-                        background-image: url(img/mobile/2.jpg);
-                    }
-    
-                    #card3 {
-                        background-image: url(img/mobile/3.jpg);
-                    }
-    
-                    #card4 {
-                        background-image: url(img/mobile/4.jpg);
+                    .card:nth-child(4) {
+                        .price {
+                            .tag {
+                                opacity: 0.2;
+                            }
+
+                            .name {
+                                font-size: 0px;
+                            }
+
+                            .name::after {
+                                font-size: 16px;
+                                content: "Pizza j&m";
+                            }
+                        }
                     }
                 }
 
-                #info {
-                    background-color: #fff;
-                    padding-bottom: 30px;
+                nav {
+                    margin-left: 45px;
+                    margin-right: 45px;
 
-                    .text {
-                        .text-info {
-                            .text1 {
-                                .check-confirm {
-                                    grid-area: text;
+                    ul {
 
-                                    h3 {
-                                        @include text(22px, $Semibold, #353535);
-                                    }
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: baseline;
+                        margin-top: 27px;
 
-                                    p {
-                                        margin-top: 5px;
-                                        @include text(16px, $Medium, #6B6B6B);
-                                    }
-                                }   
-                            }
+                        li {
+                            list-style: none;
+                            padding-bottom: 5px;
 
-                            .text2 {
+                            a {
+                                .icon {
+                                    padding: 15px;
+                                    width: 25px;
+                                    height: 25px;
+                                    background-color: #E8E8E8;
+                                    border-radius: 16px;
+                                }
+
+                                .active {
+                                    background-color: $active-color;
+                                    fill: #fff;
+                                }
+
                                 p {
-                                    @include text(14px, $Medium, #ACACAC);
-  
+                                    margin-left: 15px;
+                                    display: none;
                                 }
-                                h4 {
-                                    @include text(16px, $Semibold, #353535);    
+                            }
+
+                            .line {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .strip {
+                        display: none;
+                    }
+                }
+
+                #card1 {
+                    background-image: url(img/mobile/1.jpg);
+                }
+
+                #card2 {
+                    background-image: url(img/mobile/2.jpg);
+                }
+
+                #card3 {
+                    background-image: url(img/mobile/3.jpg);
+                }
+
+                #card4 {
+                    background-image: url(img/mobile/4.jpg);
+                }
+            }
+
+            #info {
+                background-color: #fff;
+                padding-bottom: 30px;
+
+                .text {
+                    .text-info {
+                        .text1 {
+                            .check-confirm {
+                                grid-area: text;
+
+                                h3 {
+                                    @include text(22px, $Semibold, #353535);
+                                }
+
+                                p {
+                                    margin-top: 5px;
+                                    @include text(16px, $Medium, #6B6B6B);
                                 }
                             }
                         }
 
-                        .message {
-                            @each $status,
-                            $color in $theme-colors {
-                                &--#{$status} {
-                                    @include text(10px, $Regular, #DFAF00);
-                                }
+                        .text2 {
+                            p {
+                                @include text(14px, $Medium, #ACACAC);
+
+                            }
+
+                            h4 {
+                                @include text(16px, $Semibold, #353535);
                             }
                         }
                     }
-                    .btn {
-                        margin-top: 30px;
+
+                    .message {
+
+                        @each $status,
+                        $color in $theme-colors {
+                            &--#{$status} {
+                                @include text(10px, $Regular, #DFAF00);
+                            }
+                        }
                     }
+                }
+
+                .btn {
+                    margin-top: 30px;
                 }
             }
         }
     }
+}
