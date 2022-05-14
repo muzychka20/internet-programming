@@ -1,0 +1,1084 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+@mixin text($font-size, $weight, $color) {
+    font-size: $font-size;
+    font-weight: $weight;
+    color: $color;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.col {
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #252B42;
+
+    header {
+        color: #fff;
+        text-align: center;
+        height: 1160px;
+        margin: 0;
+        padding: 0;
+
+        .container {
+
+            .bg-photo {
+                background-image: url(img/bg1.png);
+                background-repeat: no-repeat;
+
+                background-size: cover;
+            }
+
+            .row {
+                .bar {
+                    .brand {
+                        @include text(24px, 700, #fff);
+                        margin: 40px 0px 0px 35px;
+                    }
+
+                    nav {
+                        margin-top: 80px;
+
+                        ul {
+                            padding: 0;
+                            margin: 0;
+
+                            li {
+                                list-style-type: none;
+                                margin-top: 30px;
+
+                                a {
+                                    @include text(30px, 400, #fff);
+                                    text-decoration: none;
+                                }
+
+                            }
+
+                            li:nth-child(1) {
+                                margin-top: 0px;
+                            }
+
+                            li:nth-child(4) {
+                                margin-bottom: 100px;
+                            }
+                        }
+                    }
+
+                    .nav-buttons {
+                        display: none;
+
+                        .arrow {
+                            width: 12px;
+                            height: 10px;
+                        }
+                    }
+                }
+
+                .wrapper {
+                    .buttons {
+                        .more {
+                            background: none;
+                            border: 1px solid #23A6F0;
+                            width: 150px;
+                            color: #23A6F0;
+                            margin: 40px 0px 80px 0px;
+                        }
+
+                        .get {
+                            background: #23A6F0;
+                            width: 180px;
+                            margin-top: 40px;
+                            border: none;
+                        }
+                    }
+
+                    .text {
+                        h1 {
+                            margin: 80px 0px 0px 0px;
+                            max-width: 320px;
+                            @include text(40px, 700, #fff);
+                        }
+
+                        p {
+                            margin: 40px 0px 0px 0px;
+                            max-width: 280px;
+                            @include text(20px, 500, #fff);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .points {
+
+
+        .container {
+            .row {
+                .col {
+                    .features {
+                        .card {
+                            margin-top: 120px;
+                            max-width: 234px;
+                            color: #fff;
+                            background-color: #252B42;
+                            border: none;
+
+                            i {
+                                font-size: 64px;
+                                color: #23A6F0;
+                            }
+
+                            h4 {
+                                @include text(16px, 700, #fff);
+                            }
+
+                            p {
+                                @include text(14px, 500, #fff);
+                            }
+
+                            .desktop {
+                                display: none;
+                            }
+                        }
+
+                        .card:nth-child(3) {
+                            margin-bottom: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .comments {
+        background: #8EC2F2;
+
+        .container {
+            .row {
+                .col {
+                    .text {
+                        text-align: center;
+
+                        h2 {
+                            margin: 75px 0px 0px 0px;
+                            max-width: 260px;
+                            @include text(40px, 700, #fff);
+                        }
+
+                        p {
+                            color: #ffffff;
+                            margin: 10px 0px 0px 0px;
+                            max-width: 270px;
+                            @include text(14px, 500, #fff);
+                        }
+                    }
+
+                    .cards-comments {
+                        margin-top: 60px;
+
+                        .card-comment {
+                            background-color: #fff;
+                            width: 325px;
+
+                            .card-comment-content {
+                                padding: 30px 40px;
+
+                                h3 {
+                                    @include text(24px, 700, #252B42);
+
+                                }
+
+                                h4 {
+                                    @include text(14px, 600, #737373);
+                                }
+
+                                p {
+                                    margin-top: 15px;
+                                    @include text(14px, 500, #737373);
+                                    max-width: 240px;
+                                }
+
+                                .stars {
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+
+                        .card-comment:nth-child(1) {
+                            margin: 0px 0px 30px 0px;
+                        }
+
+                        .card-comment:nth-child(2) {
+                            margin: 0px 0px 80px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .projects {
+
+        .container {
+            .row {
+                .col {
+                    .wrapper-projects {
+                        padding-top: 75px;
+
+                        .text {
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            h2 {
+                                max-width: 260px;
+                                line-height: 57px;
+                                @include text(40px, 700, #fff);
+                            }
+
+                            p {
+                                color: #ffffff;
+                                margin-top: 30px;
+                                max-width: 240px;
+                                @include text(14px, 500, #fff);
+
+                            }
+                        }
+
+                        .projects-cards {
+                            padding-bottom: 100px;
+
+                            .projects-cards-card {
+                                display: flex;
+                                align-items: flex-end;
+                                width: 330px;
+                                height: 450px;
+                                padding: 0px 0px 30px 30px;
+                                margin-top: 30px;
+
+                                .text {
+                                    display: flex;
+                                    align-items: start;
+                                    text-align: left;
+
+                                    h6 {
+                                        @include text(14px, 600, #fff);
+                                        margin: 15px 0px 0px 0px;
+                                    }
+
+                                    h3 {
+                                        margin: 15px 0px 0px 0px;
+                                        @include text(24px, 700, #fff);
+                                    }
+
+                                    .view {
+                                        height: 40px;
+                                        width: 165px;
+                                        margin: 15px 0px 0px 0px;
+                                        @include text(14px, 700, #fff);
+                                        background: #23A6F0;
+                                    }
+                                }
+                            }
+
+                            .projects-cards-card:nth-child(1) {
+                                margin-top: 60px;
+                            }
+
+                            #first {
+                                background-image: url(img/projects/first.jpg);
+                            }
+
+                            #second {
+                                background-image: url(img/projects/second.jpg);
+                            }
+
+                            #third {
+                                background-image: url(img/projects/third.jpg);
+                            }
+
+                            #fourth {
+                                background-image: url(img/projects/fourth.jpg);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .pricing {
+        .container {
+            .row {
+                .col {
+                    .wrapper-pricing {
+                        .wrapper-pricinng-text {
+                            text-align: center;
+                            margin-top: 75px;
+
+                            h2 {
+                                @include text(40px, 400, #fff);
+                                margin: 0;
+                            }
+
+                            p {
+                                @include text(14px, 700, #fff);
+                                letter-spacing: 0.2px;
+                                width: 265px;
+                                margin: 10px 0px 0px 0px;
+                            }
+                        }
+
+                        .wrapper-pricing-cards {
+                            .wrapper-pricing-cards-card {
+                                background-color: #fff;
+                                padding: 50px 40px;
+                                width: 330px;
+                                text-align: center;
+                                margin-top: 60px;
+
+                                .wrapper-pricing-cards-card-text {
+                                    h3 {
+                                        @include text(24px, 700, #252B42);
+                                    }
+
+                                    h5 {
+                                        display: block;
+                                        margin: 0 auto;
+                                        @include text(16px, 700, #737373);
+                                        max-width: 160px;
+                                        margin-top: 35px;
+                                    }
+                                }
+
+                                .wrapper-pricing-cards-card-pricetag {
+                                    margin-top: 35px;
+                                    display: grid;
+                                    grid-template-columns: auto auto;
+                                    grid-template-rows: auto;
+                                    grid-template-areas:
+                                        "price period";
+                                    justify-items: end;
+                                    justify-content: center;
+                                    column-gap: 10px;
+
+                                    h2 {
+                                        @include text(40px, 700, #23A6F0);
+                                        grid-area: price;
+                                    }
+
+                                    .period {
+                                        grid-area: period;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+
+                                        h3 {
+                                            @include text(16px, 700, #23A6F0);
+
+                                            align-items: start;
+                                        }
+
+                                        h5 {
+                                            @include text(14px, 600, #8EC2F2);
+
+                                            margin: 10px 0px 0px 0px;
+                                        }
+                                    }
+                                }
+
+                                .wrapper-pricing-cards-card-confirm {
+                                    .wrapper-pricing-cards-card-confirm-list {
+                                        ul {
+                                            padding: 0;
+                                            margin: 35px 0px 0px 0px;
+
+                                            li {
+                                                display: flex;
+                                                text-align: left;
+                                                list-style-type: none;
+                                                @include text(14px, 600, #252B42);
+                                                margin-top: 15px;
+
+                                                img {
+                                                    margin-right: 10px;
+                                                }
+                                            }
+
+                                            li:nth-child(1) {
+                                                margin: 0;
+                                                ;
+                                            }
+                                        }
+                                    }
+
+                                    .wrapper-pricing-cards-card-confirm-button {
+                                        button {
+                                            width: 100%;
+                                            background-color: #23A6F0;
+                                            border: none;
+                                            margin-top: 35px;
+                                            @include text(14px, 600, #fff);
+                                            height: 50px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .wrapper-pricing-cards-card:nth-child(3) {
+                                margin-bottom: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        background: #FAFAFA;
+
+        .container {
+            .row {
+                .col {
+                    .contact-wrapper {
+                        width: fit-content;
+                        display: block;
+                        margin: 0 auto;
+
+                        .contact-wrapper-text {
+                            h3 {
+                                margin: 40px 0px 0px 0px;
+                                @include text(24px, 700, #252B42);
+                                max-width: 240px;
+                            }
+
+                            p {
+                                margin: 10px 0px 0px 0px;
+                                @include text(14px, 500, #252B42);
+                                max-width: 185px;
+                            }
+                        }
+
+                        .contact-wrapper-button {
+                            button {
+                                background-color: #23A6F0;
+                                color: #fff;
+                                height: 50px;
+                                border: none;
+                                margin: 50px 0px 40px 0px;
+                                width: 160px;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navigation {
+        .container {
+            .row {
+                .col {
+                    nav {
+                        .navigation-wrapper {
+                            margin: 60px 0px 60px 90px;
+
+                            .navigation-wrapper-list {
+                                .navigation-wrapper-list-name {
+                                    margin: 60px 0px 0px 0px;
+                                    @include text(16px, 700, #fff);
+                                }
+
+                                ul {
+                                    padding: 0;
+                                    margin: 0;
+
+                                    li {
+                                        list-style-type: none;
+                                        margin-top: 10px;
+
+                                        a {
+                                            @include text(14px, 500, #fff);
+                                            text-decoration: none;
+
+                                            i {
+                                                color: #23A6F0;
+                                                margin-right: 10px;
+                                            }
+                                        }
+                                    }
+
+                                    li:nth-child(1) {
+                                        margin-top: 20px;
+                                    }
+                                }
+                            }
+
+
+                            .navigation-wrapper-list:nth-child(1) {
+                                .navigation-wrapper-list-name {
+                                    margin: 0;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: #252B42;
+
+        .container {
+            .row {
+                .col {
+                    .footer-wrapper {
+                        padding: 25px 0px 55px 90px;
+
+                        p {
+                            @include text(14px, 600, #fff);
+                            max-width: 230px;
+                            margin: 0px 0px 50px 0px;
+                        }
+
+                        .icons {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: baseline;
+
+                            .icons-icon {
+                                margin: 0px 20px 0px 0px;
+                                padding: 0;
+                                font-size: 24px;
+                                line-height: 24px;
+
+                                .instagram {
+                                    color: #E51F5A;
+                                }
+
+                                .twitter {
+                                    color: #21A6DF;
+                                }
+
+                                .youtube {
+                                    color: #E42F08;
+                                }
+
+                                .facebook-a-mobile {
+                                    font-style: normal;
+                                    color: #335BF5;
+                                    font-family: fontawesome !important;
+                                }
+
+                                .facebook-a-desktop {
+                                    display: none;
+                                }
+
+                                a {
+                                    text-decoration: none;
+                                }
+
+                            }
+
+                            .icons-icon:nth-child(4) {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+$breaks-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
+@media screen and (min-width: map-get($breaks-widths, "lg")) {
+    body {
+        header {
+            height: 100vh;
+            background-image: url(img/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .container {
+                .bg-photo {
+                    background-image: none;
+                }
+
+                .row {
+                    .bar {
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: space-between;
+
+                        .brand {
+                            @include text(24px, 700, #fff);
+                            margin: 0;
+                        }
+
+                        nav {
+                            margin: 30px 0px 0px 0px;
+
+                            ul {
+                                padding: 0;
+                                margin: 0;
+                                display: flex;
+                                align-items: baseline;
+
+                                li:nth-child(1) {
+                                    margin: 0px 20px 0px 0px;
+                                }
+
+                                li:nth-child(4) {
+                                    margin: 0;
+                                }
+
+                                li {
+                                    list-style-type: none;
+                                    margin: 0px 20px 0px 0px;
+                                    margin-top: 30px;
+
+                                    a {
+                                        @include text(14px, 600, #fff);
+                                    }
+
+
+                                }
+                            }
+                        }
+
+                        .nav-buttons {
+                            display: block;
+
+                            a {
+                                margin-right: 45px;
+                                @include text(14px, 700, #fff);
+                                text-decoration: none;
+                            }
+
+                            button {
+                                height: 52px;
+                                background: #23A6F0;
+                                border: none;
+                                @include text(14px, 700, #fff);
+
+                                i {
+                                    margin-left: 15px;
+                                }
+                            }
+
+                            .arrow {
+                                width: 12px;
+                                height: 10px;
+                            }
+                        }
+                    }
+
+                    .wrapper {
+                        height: 90vh;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+
+                        .buttons {
+                            display: flex !important;
+                            flex-direction: row !important;
+                            align-items: flex-start !important;
+
+                            .more {
+                                background: none;
+                                border: 1px solid #ffffff;
+                                width: 155px;
+                                color: #ffffff;
+                                height: 52px;
+                                margin: 40px 0px 0px 0px;
+                            }
+
+                            .get {
+                                background: #23A6F0;
+                                width: 185px;
+                                margin-right: 10px;
+                                height: 52px;
+                            }
+                        }
+
+                        .text {
+                            align-items: start !important;
+                            text-align: left;
+
+                            h1 {
+                                margin: 0px 0px 0px 0px;
+                                max-width: 600px;
+                                @include text(58px, 800, #fff);
+                            }
+
+                            p {
+                                margin: 40px 0px 0px 0px;
+                                max-width: 380px;
+                                @include text(20px, 500, #fff);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .points {
+            .container {
+                .row {
+                    .col {
+                        .features {
+                            flex-direction: row !important;
+                            justify-content: center !important;
+                            margin-bottom: 120px !important;
+                            align-items: baseline !important;
+
+                            .card {
+                                margin: 120px 130px 0px 0px;
+
+                                i {
+                                    font-size: 64px;
+                                }
+
+                                h4 {
+                                    @include text(16px, 700, #fff);
+                                }
+
+                                p {
+                                    @include text(14px, 500, #fff);
+                                }
+                            }
+
+                            .card:nth-child(3) {
+                                margin: 0;
+                            }
+
+                            .ratio {
+                                display: none;
+                            }
+
+                            .desktop {
+                                display: block !important;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .comments {
+            .container {
+                .row {
+                    .col {
+                        .text {
+                            h2 {
+                                margin: 75px 0px 0px 0px;
+                                max-width: 100%;
+                                @include text(40px, 700, #fff);
+                            }
+
+                            p {
+                                color: #ffffff;
+                                margin: 10px 0px 0px 0px;
+                                max-width: 470px;
+                                @include text(14px, 500, #fff);
+                            }
+                        }
+
+                        .cards-comments {
+                            flex-direction: row !important;
+                            align-items: baseline !important;
+                            justify-content: center !important;
+                            margin-bottom: 80px;
+
+                            .card-comment {
+                                background-color: #fff;
+                                width: 325px;
+
+                                .card-comment-content {
+                                    padding: 30px 40px;
+
+                                    h3 {
+                                        @include text(24px, 700, #252B42);
+
+                                    }
+
+                                    h4 {
+                                        @include text(14px, 600, #737373);
+                                    }
+
+                                    p {
+                                        margin-top: 15px;
+                                        @include text(14px, 500, #737373);
+                                        max-width: 240px;
+                                    }
+
+                                    .stars {
+                                        margin-top: 15px;
+                                    }
+                                }
+                            }
+
+                            .card-comment:nth-child(1) {
+                                margin: 0px 140px 0px 0px;
+                            }
+
+                            .card-comment:nth-child(2) {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .projects {
+            .container {
+                .row {
+                    .col {
+                        .wrapper-projects {
+                            padding-top: 100px;
+
+                            .text {
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                h2 {
+                                    max-width: 550px;
+                                    line-height: 57px;
+                                    margin: 0;
+                                    @include text(40px, 700, #fff);
+                                }
+
+                                p {
+                                    color: #ffffff;
+                                    margin: 10px 0px 0px 0px;
+                                    max-width: 470px;
+                                    @include text(14px, 500, #fff);
+
+                                }
+                            }
+
+                            .projects-cards {
+                                padding-bottom: 100px;
+                                flex-direction: row !important;
+                                align-items: baseline !important;
+                                margin-top: 100px;
+
+                                .projects-cards-card {
+                                    display: flex;
+                                    align-items: flex-end;
+                                    width: 330px;
+                                    height: 350px;
+                                    padding: 0px 0px 20px 20px;
+                                    margin: 0px 20px 0px 0px;
+
+                                    .text {
+                                        display: flex;
+                                        align-items: start;
+                                        text-align: left;
+
+                                        h3 {
+                                            @include text(16px, 400, #fff);
+                                            letter-spacing: 1px;
+                                        }
+                                    }
+                                }
+
+                                .projects-cards-card:nth-child(1) {
+                                    margin-top: 0px;
+                                }
+
+                                .projects-cards-card:nth-child(4) {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pricing {
+            .container {
+                .row {
+                    .col {
+                        .wrapper-pricing {
+                            .wrapper-pricing-cards {
+                                flex-direction: row !important;
+                                justify-content: space-between;
+                                margin: 60px 0px 140px 0px;
+
+                                .wrapper-pricing-cards-card {
+                                    margin: 0px 30px 0px 0px;
+
+                                    .wrapper-pricing-cards-card-confirm {
+                                        display: flex;
+                                        flex-direction: column-reverse;
+                                    }
+                                }
+
+                                .wrapper-pricing-cards-card:nth-child(3) {
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact {
+            background: #FAFAFA;
+
+            .container {
+                .row {
+                    .col {
+                        .contact-wrapper {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+                            .contact-wrapper-text {
+                                margin-top: 40px;
+
+                                h3 {
+                                    margin: 0;
+                                    @include text(24px, 700, #252B42);
+                                    max-width: 100%;
+                                }
+
+                                p {
+                                    margin: 10px 0px 0px 0px;
+                                    @include text(14px, 500, #252B42);
+                                    max-width: 100%;
+                                }
+                            }
+
+                            .contact-wrapper-button {
+                                button {
+                                    background-color: #23A6F0;
+                                    color: #fff;
+                                    height: 50px;
+                                    border: none;
+                                    margin: 50px 0px 40px 0px;
+                                    width: 160px;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .navigation {
+            .container {
+                .row {
+                    .col {
+                        nav {
+                            .navigation-wrapper {
+                                flex-direction: row !important;
+                                justify-content: space-between !important;
+                                margin: 50px 0px 50px 0px;
+
+                                .navigation-wrapper-list {
+                                    margin: 0;
+
+                                    .navigation-wrapper-list-name {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            background-color: #FAFAFA;
+
+            .container {
+                .row {
+                    .col {
+                        .footer-wrapper {
+                            padding: 25px 0px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: baseline;
+
+                            p {
+                                margin: 0;
+                                @include text(14px, 600, #737373);
+                                max-width: 100%;
+                            }
+
+                            .icons-icon {
+                                margin: 0px 20px 0px 0px;
+                                padding: 0;
+                                font-size: 24px;
+                                line-height: 24px;
+
+                                .instagram {
+                                    color: #23A6F0 !important;
+                                }
+
+                                .twitter {
+                                    color: #23A6F0 !important;
+                                }
+
+                                .youtube {
+                                    display: none;
+                                }
+
+                                .facebook-a-mobile {
+                                    display: none;
+                                }
+
+                                .facebook-a-desktop {
+                                    display: block !important;
+                                    color: #23A6F0;
+                                }
+
+
+                            }
+
+                            .icons-icon:nth-child(3) {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
