@@ -23,12 +23,6 @@ body header {
   padding: 0;
 }
 
-body header .container .bg-photo {
-  background-image: url(img/bg1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 body header .container .row .bar .brand {
   font-size: 24px;
   font-weight: 700;
