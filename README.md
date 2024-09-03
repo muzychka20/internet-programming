@@ -16,6 +16,8 @@ This repository contains laboratory assignments for the Internet Programming cou
 
 - **[Lab 6](./LR6/README.md)**
 
+- **[Exam](./Exam/README.md)**
+
 ## Getting Started
 
 To get started with the laboratory assignments, please refer to the `README.md` files in each folder. 
