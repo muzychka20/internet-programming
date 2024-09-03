@@ -18,6 +18,8 @@ This repository contains laboratory assignments for the Internet Programming cou
 
 - **[Exam](./Exam/README.md)**
 
+- **[Travel](./Travel/README.md)**
+
 ## Getting Started
 
 To get started with the laboratory assignments, please refer to the `README.md` files in each folder. 
