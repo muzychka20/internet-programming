@@ -18,4 +18,4 @@ This repository contains laboratory assignments for the Internet Programming cou
 
 ## Getting Started
 
-To get started with the laboratory assignments, please refer to the `README.md` files in each folder. They contain all the necessary details and instructions for completing the labs.
+To get started with the laboratory assignments, please refer to the `README.md` files in each folder. 
