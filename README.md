@@ -4,23 +4,17 @@ This repository contains laboratory assignments for the Internet Programming cou
 
 ## Lab Overview
 
-- **[Lab 1](./lab1/README.md)**  
-Lab 1
+- **[Lab 1](./LR1/README.md)**  
 
-- **[Lab 2](./lab2/README.md)**
-Lab 2
+- **[Lab 2](./LR2/README.md)**
 
-- **[Lab 3](./lab3/README.md)**  
-Lab 3
+- **[Lab 3](./LR3/README.md)**  
 
-- **[Lab 4](./lab4/README.md)**
-Lab 4
+- **[Lab 4](./LR4/README.md)**
 
-- **[Lab 5](./lab5/README.md)**
-Lab 5
+- **[Lab 5](./LR5/README.md)**
 
-- **[Lab 6](./lab6/README.md)**
-Lab 6
+- **[Lab 6](./LR6/README.md)**
 
 ## Getting Started
 
