@@ -1,4 +1,4 @@
-# Lab 1 - Visual Studio Code - Open Source
+# Visual Studio Code - Open Source
 
 ## Overview
 
