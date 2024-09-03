@@ -22,20 +22,20 @@ Here’s a preview of the landing page:
 A responsive carousel component with the following slides:
 
 1. **United Kingdom**
-   - ![UK](img/uk.png)
-   - Description: Highlights popular sites in the UK including London, Stonehenge, and Edinburgh, along with unique places to visit.
+  ![UK](img/uk.png)
+  Highlights popular sites in the UK including London, Stonehenge, and Edinburgh, along with unique places to visit.
 
 2. **Canada**
-   - ![Canada](img/canada.png)
-   - Description: Features outdoor activities such as mountaineering, hiking, and boating, with a mention of Niagara Falls.
+  ![Canada](img/canada.png)
+  Features outdoor activities such as mountaineering, hiking, and boating, with a mention of Niagara Falls.
 
 3. **Australia**
    - ![Australia](img/australia.png)
    - Description: Known for its nature, with 550 national parks and 15 World Heritage Sites, including mountains, deserts, and coral reefs.
 
 4. **New Zealand**
-   - ![New Zealand](img/nz.png)
-   - Description: Offers diverse landscapes including mountain vistas, ancient forests, volcanic landscapes, and stunning coastlines.
+  ![New Zealand](img/nz.png)
+  Description: Offers diverse landscapes including mountain vistas, ancient forests, volcanic landscapes, and stunning coastlines.
 
 ## Additional Information
 
